@@ -1,0 +1,30 @@
+<html lang=“pt-br”>
+	<head>
+		<title>Curso JavaScript</title>
+		<meta charset=“UTF-8”>
+		<script>
+			//Declarando a variavel
+			let total=0.0;
+			let op=0;
+			let cont=0;
+			let media=0.0;
+			//Utilizando o While
+			do{
+				op=(prompt("Digite a nota do aluno ou fim para sair:","Digite aqui."));
+				if(!isNaN(op)){//!isNaN verifica se não é NaN(Not-A-Number)
+					total=total+parseFloat(op);
+					cont++;
+				}else if(op.toUpperCase()!="FIM"){
+					alert("Digite apenas numeros, ou fim para sair!!!");
+				}else{
+					media=total/cont;
+					document.write("A média do aluno foi: "+media.toFixed(2));
+				}//.toFixed(2) arredonda o valor para duas casas decimais. Ex: 9.99
+			}while(op.toUpperCase()!="FIM");//.toUpperCase()transforma em maisculas
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

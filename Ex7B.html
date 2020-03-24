@@ -1,0 +1,25 @@
+<html lang=“pt-br”>
+	<head>
+		<title>Curso de Javascript</title>
+		<meta charset=“UTF-8”>
+		<script>
+			//Declarando a variavel
+			let i;
+			let mochila=new Array();
+			let qtd;
+			//Perguntando a qtd
+			qtd=parseFloat(prompt("Quantos itens você quer comprar?","Digite aqui..."));
+			//Utilizando o For para receber os itens
+			for(i=0; i<qtd; i++){
+				mochila[i]=(prompt("Digite o nome do item "+parseFloat(i+1),"Digite aqui..."));
+			}
+			//Utilizando o For
+			for(i=0; i<mochila.length; i++){
+				document.write(mochila[i]+"<br>");
+			}
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

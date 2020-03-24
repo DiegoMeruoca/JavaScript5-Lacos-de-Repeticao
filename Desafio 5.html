@@ -1,0 +1,26 @@
+<html lang=“pt-br”>
+	<head>
+		<title>Desafio 1</title>
+		<meta charset=“UTF-8”>
+		<script>
+			//Declarando a variavel
+			let i;
+			let materiais=new Array();
+			let qtd;
+			//Perguntando a qtd
+			qtd=parseFloat(prompt("Quantos itens você quer comprar?","Digite aqui..."));
+			//Utilizando o For para receber os itens
+			for(i=0; i<qtd; i++){
+				materiais[i]=(prompt("Digite o nome do item "+parseFloat(i+1),"Digite aqui..."));
+			}
+			document.write("Os itens que você escolheu são:<br>");
+			//Utilizando o For para exibir os itens
+			for(i=0; i<qtd; i++){
+				document.write(+parseFloat(i+1)+"-"+materiais[i]+"<br>");
+			}
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
